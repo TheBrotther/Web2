@@ -21,18 +21,6 @@ class HeroeController extends Controller{
             $heroes = $this->model->getHeroes();
         }
         $this->view->renderHeroes($heroes, $this->atributoModel->getAtributos());
-
-        //if (!$id_atributo){
-        //    $heroes = $this->model->getHeroesByAtributo($id_atributo);
-        //    $atributos = $this->atributoModel->getAtributos();
-        //    $this->view->renderHeroes($heroes, $atributos);
-        //}else{
-        //    $heroes = $this->model->getHeroes();
-        //    $atributos = $this->atributoModel->getAtributos();
-        //    $this->view->renderHeroes($heroes, $atributos);
-        //}
-
-        //$this->view->showHeroes();
     }
     
     //public function formHeroe(){

@@ -32,6 +32,9 @@ switch ($params[0]){
             $heroeController->showHeroes();}
         break;
 
+    case 'register-mierda':
+        $userController->registerAction($_POST['nombre'], $_POST['email'], $_POST['password']);
+        break;
 
     default:
         echo('<h1>Error 404, pagina no encontrada.</h1>');

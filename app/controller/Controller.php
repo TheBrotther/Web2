@@ -13,4 +13,9 @@ class Controller{
         $this->model = $model;
         $this->view = $view;
     }
+
+    public function redirectRoute($route)
+    {
+        header("Location: ".BASE_URL.$route);
+    }
 }
