@@ -1,0 +1,19 @@
+
+
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 42%;
+}
+
+.Fuerza{
+    background-color: red;
+}
+
+.Agilidad{
+    background-color: green;
+} 
+
+.Inteligencia{
+    background-color: lightskyblue;
+} 
