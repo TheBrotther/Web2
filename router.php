@@ -32,8 +32,16 @@ switch ($params[0]){
             $heroeController->showHeroes();}
         break;
 
-    case 'register-mierda':
+    case 'registered':
         $userController->registerAction($_POST['nombre'], $_POST['email'], $_POST['password']);
+        break;
+    
+    case 'verify':
+        $userController->loginIn();
+        break;
+    
+    case 'logOut':
+        $userController->logOut();
         break;
 
     default:

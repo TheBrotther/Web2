@@ -6,6 +6,8 @@ class View{
 
     public function __construct() {
         $this->smarty = new Smarty();
+        if (!session_id())
+            session_start();
     }
     
     public function renderForHeroe($atributos){

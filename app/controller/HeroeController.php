@@ -23,8 +23,4 @@ class HeroeController extends Controller{
         $this->view->renderHeroes($heroes, $this->atributoModel->getAtributos());
     }
     
-    //public function formHeroe(){
-    //    $atributos = $this->atributo_model->getAtributos();
-    //    $this->view->renderFormMateria($atributos);
-    //}
 }

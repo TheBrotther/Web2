@@ -1,7 +1,5 @@
 {include file="header.tpl"}
 
-HEROES PAPAA
-
 <div class="container w-75 d-flex flex-wrap my-2 mb-3">
 
     <div class="container w-75 d-flex flex-wrap my-2 mb-3">

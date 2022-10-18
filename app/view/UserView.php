@@ -10,11 +10,12 @@ class UserView extends View{
     public function showHome(){
         //Aqui se borro algo que lucas no quiere reconocer,
         //(insertar una ruta a un assign).
-        
         $this->smarty->display('./templates/home.tpl');
+        
     }
 
-    public function showLogin(){
+    public function showLogin($error=null){
+        $this->smarty->assign("error", $error);
         $this->smarty->display('./templates/login.tpl');
     }
 
@@ -22,5 +23,4 @@ class UserView extends View{
         $this->smarty->display('./templates/register.tpl');
     }
 
-    
 }
